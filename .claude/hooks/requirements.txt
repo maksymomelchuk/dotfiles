@@ -1,0 +1,4 @@
+# Development dependencies for IDE type checking
+# These are also specified inline in the scripts (PEP 723)
+python-dotenv>=1.0.0
+elevenlabs>=1.0.0
