@@ -58,6 +58,58 @@ alias gcoall='git checkout -- .'
 alias gr='git remote'
 alias gre='git reset'
 
+# Worktree management
+function wt() {
+  local repo_root
+  repo_root=$(git rev-parse --show-toplevel 2>/dev/null)
+  if [[ -z "$repo_root" ]]; then
+    echo "Not inside a git repository"
+    return 1
+  fi
+
+  local worktrees_dir="$repo_root/worktrees"
+
+  case "$1" in
+    new)
+      local branch="${2:-}"
+      if [[ -z "$branch" ]]; then
+        echo "Usage: wt new <branch-name>"
+        return 1
+      fi
+      mkdir -p "$worktrees_dir"
+      git worktree add "$worktrees_dir/$branch" -b "$branch" || return 1
+      cd "$worktrees_dir/$branch" || return 1
+      pnpm install
+      local env_files=(
+        "apps/web/.env.local"
+        "apps/api/.env"
+        "apps/admin/.env.local"
+        "apps/backend/.env"
+        "apps/landing/.env.local"
+      )
+      for env_file in "${env_files[@]}"; do
+        [[ -f "$repo_root/$env_file" ]] && cp "$repo_root/$env_file" "$env_file"
+      done
+      echo "Worktree ready: $worktrees_dir/$branch"
+      ;;
+    rm)
+      local branch="${2:-}"
+      if [[ -z "$branch" ]]; then
+        echo "Usage: wt rm <branch-name>"
+        return 1
+      fi
+      git worktree remove "$worktrees_dir/$branch"
+      ;;
+    ls)
+      git worktree list
+      ;;
+    *)
+      echo "Usage: wt {new|rm|ls} <branch-name>"
+      return 1
+      ;;
+  esac
+}
+
 # Docker
 alias dco="docker compose"
 alias dps="docker ps"
