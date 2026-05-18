@@ -1,0 +1,10 @@
+{
+  "lastChangelogVersion": "0.75.3",
+  "defaultProvider": "anthropic",
+  "defaultModel": "claude-sonnet-4-6",
+  "packages": [
+    "npm:@gotgenes/pi-anthropic-auth"
+  ],
+  "theme": "catppuccin-latte",
+  "defaultThinkingLevel": "high"
+}
