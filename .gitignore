@@ -1,0 +1,8 @@
+User/History/
+User/sync/
+.DS_Store
+package-lock.json
+.vscode/
+User/globalStorage/
+User/workspaceStorage/
+node_modules

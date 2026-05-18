@@ -1,0 +1,216 @@
+{
+  "workbench.settings.editor": "json",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "editor.formatOnSave": true,
+
+  "explorer.confirmDelete": false,
+  "terminal.integrated.gpuAcceleration": "no",
+  "git.autofetch": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.linkedEditing": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "editor.fontSize": 18,
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "autoprefix": "last 5 versions",
+      "extensionName": ".css",
+      "savePath": "css"
+    }
+  ],
+  "html.format.contentUnformatted": "",
+
+  // Emmet formatter
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.useInlineCompletions": true,
+  "files.associations": { "*html": "html" },
+  "html.format.extraLiners": "",
+  "markdownlint.config": {},
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.colorTheme": "Catppuccin Latte",
+  "liveSassCompile.settings.showAnnouncements": null,
+  "turboConsoleLog.logMessagePrefix": "",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 16,
+  "editor.cursorBlinking": "expand",
+  "editor.fontVariations": false,
+  "editor.rulers": [80, 120],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#556d79"
+  },
+  "workbench.startupEditor": "none",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.sideBar.location": "right",
+  "aws.suppressPrompts": {
+    "regionAddAutomatically": true,
+    "codeWhispererNewWelcomeMessage": true,
+    "codeWhispererConnectionExpired": true
+  },
+  "git-autoconfig.configList": [
+    {
+      "user.email": "maksym@serverless.direct",
+      "user.name": "maksym-serverless"
+    },
+    {},
+    {
+      "user.email": "omelchukmaksym@gmail.com",
+      "user.name": "omelchukmaksym"
+    },
+    {
+      "user.email": "omelchukmaksym@gmail.com",
+      "user.name": "maksymomelchuk"
+    }
+  ],
+  "prettier.tabWidth": 4,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.autoReplies": {},
+  "githubPullRequests.pullBranch": "never",
+  "editor.tabSize": 2,
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "totalTypeScript.hiddenTips": [
+    "interface-declaration",
+    "variable-type-annotation",
+    "passing-generics-to-types",
+    "typing-function-parameters",
+    "basic-types",
+    "any-type",
+    "as-assertion",
+    "ts-object-type",
+    "array-type",
+    "union-type",
+    "null-keyword",
+    "literal-type",
+    "function-return-type",
+    "typeof",
+    "type-alias-declaration",
+    "returntype-utility-type",
+    "pick-utility-type",
+    "undefined-keyword",
+    "optional-object-property",
+    "omit-utility-type",
+    "partial-utility-type",
+    "generic-slots-in-functions",
+    "non-null-expression",
+    "tuple-type",
+    "interface-with-generics",
+    "type-alias-with-generics",
+    "interface-with-multiple-generics",
+    "type-alias-with-multiple-generics",
+    "record-utility-type",
+    "keyof",
+    "as-const",
+    "as-const-on-object",
+    "never-keyword",
+    "exclude-utility-type",
+    "mapped-type",
+    "awaited-utility-type",
+    "type-predicate",
+    "parameters-utility-type"
+  ],
+  "cSpell.userWords": [
+    "Getmany",
+    "hookform",
+    "lucide",
+    "Msag",
+    "nextjs",
+    "opensearch",
+    "Prefs",
+    "sickleave",
+    "sonner",
+    "tanstack",
+    "toastify",
+    "trpc",
+    "upwork",
+    "webp"
+  ],
+  "yaml.schemas": {
+    "file:///Users/maksym/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "redhat.telemetry.enabled": true,
+  "atlascode.jira.jqlList": [
+    {
+      "id": "dddc0342-7356-4153-beb4-9551c53591d0",
+      "enabled": true,
+      "name": "My nga911 Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "35a54f01-b7f5-4473-b7c4-fa9a6686d039",
+      "monitor": true
+    }
+  ],
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "terminal.integrated.env.osx": {},
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editor.enablePreview": false,
+  "git.enableSmartCommit": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.commandCenter": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.accessibilitySupport": "off",
+  "vim.startInInsertMode": false,
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.maxComputationTime": 0,
+  "yaml.maxItemsComputed": 100000,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "json.schemas": [],
+  "vim.visualModeKeyBindingsNonRecursive": [],
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native"
+}

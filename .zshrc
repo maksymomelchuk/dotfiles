@@ -1,3 +1,10 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+fpath=("/Users/maksym/.oh-my-zsh/custom/completions" $fpath)
+autoload -Uz compinit
+compinit
+# OPENSPEC:END
+
 export ZSH="$HOME/.oh-my-zsh"
 
 # Reevaluate the prompt string each time it's displaying a prompt
@@ -24,12 +31,15 @@ export EDITOR=/opt/homebrew/bin/nvim
 alias la=tree
 alias cat=bat
 
+#Claude
+alias cc="claude --dangerously-skip-permissions"
+
 # pnpm
 alias pd="pnpm dev"
 alias pb="pnpm build"
 alias ps="pnpm start"
 alias pt="pnpm typecheck"
-alias pi="pnpm install"
+alias pin="pnpm install"
 
 # Git
 alias gc="git commit -m"
@@ -93,3 +103,15 @@ cx() { cd "$@" && l; }
 fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }
 f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
+
+export GEMINI_API_KEY='REDACTED'
+
+# Added by Antigravity
+export PATH="/Users/maksym/.antigravity/antigravity/bin:$PATH"
+
+# bun completions
+[ -s "/Users/maksym/.bun/_bun" ] && source "/Users/maksym/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
