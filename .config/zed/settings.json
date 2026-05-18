@@ -1,0 +1,74 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "bypassPermissions"
+      },
+      "type": "registry"
+    }
+  },
+  "git_panel": {
+    "dock": "right",
+    "tree_view": false
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+    "mode": "eager"
+  },
+  "colorize_brackets": true,
+  "gutter": {
+    "min_line_number_digits": 3
+  },
+  "agent": {
+    "dock": "left",
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-flash-preview-04-17"
+    }
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 18,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "One Dark"
+  },
+  "vim_mode": false,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  //
+  "format_on_save": "on",
+  "code_actions_on_format": {
+    "source.removeUnusedImports": true,
+    "source.addMissingImports": true,
+    "source.fixAll.eslint": true,
+    "sourceAll.organizeImports": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "collaboration_panel": {
+    "dock": "right",
+    "button": false
+  }
+}
