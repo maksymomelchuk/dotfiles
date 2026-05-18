@@ -1,5 +1,7 @@
 User/History/
 User/sync/
+.env
+.env.*
 .DS_Store
 package-lock.json
 .vscode/
