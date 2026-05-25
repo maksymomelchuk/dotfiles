@@ -20,6 +20,9 @@
       "Bash(pnpm typecheck:*)"
     ],
     "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/.env*)",
       "Bash(rm -rf:*)",
       "Bash(rm -fr:*)",
       "Bash(sudo rm:*)",
