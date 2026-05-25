@@ -32,7 +32,7 @@ alias la=tree
 alias cat=bat
 
 #Claude
-alias cc="claude --dangerously-skip-permissions"
+alias cc="claude --enable-auto-mode"
 
 # pnpm
 alias pd="pnpm dev"

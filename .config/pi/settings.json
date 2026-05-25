@@ -1,10 +1,29 @@
 {
-  "lastChangelogVersion": "0.75.3",
+  "lastChangelogVersion": "0.75.5",
   "defaultProvider": "anthropic",
-  "defaultModel": "claude-sonnet-4-6",
+  "defaultModel": "claude-opus-4-7",
   "packages": [
-    "npm:@gotgenes/pi-anthropic-auth"
+    "npm:@gotgenes/pi-anthropic-auth",
+    "npm:pi-mcp-adapter",
+    "npm:pi-web-access",
+    "npm:@juicesharp/rpiv-args"
   ],
-  "theme": "catppuccin-latte",
-  "defaultThinkingLevel": "high"
+  "theme": "neutral",
+  "defaultThinkingLevel": "medium",
+  "hideThinkingBlock": true,
+  "quietStartup": true,
+  "warnings": {
+    "anthropicExtraUsage": false
+  },
+  "skills": [
+    "~/.claude/skills/staff-engineer/SKILL.md",
+    "~/.claude/skills/deepreview/SKILL.md",
+    "~/.claude/skills/coderabbit-review/SKILL.md",
+    "~/.claude/skills/grill-me/SKILL.md"
+  ],
+  "enabledModels": [
+    "anthropic/claude-sonnet-4-6",
+    "anthropic/claude-opus-4-7",
+    "anthropic/claude-haiku-4-5"
+  ]
 }

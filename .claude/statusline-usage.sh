@@ -1,6 +1,6 @@
 #!/bin/bash
 input=$(cat)
-MODEL=$(echo "$input" | jq -r '.model.display_name')
+MODEL=$(echo "$input" | jq -r '.model.display_name' | sed -E 's/ *\(1M context\)//')
 FIVE_H=$(echo "$input" | jq -r '.rate_limits.five_hour.used_percentage // empty')
 RESETS_AT=$(echo "$input" | jq -r '.rate_limits.five_hour.resets_at // empty')
 

@@ -7,6 +7,27 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "diff_view_style": "split",
+  "bottom_dock_layout": "full",
+  "disable_ai": false,
+  "proxy": "",
+  "use_system_window_tabs": false,
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": true,
+    "show": true
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_project_items": true,
+    "show_onboarding_banner": true,
+    "show_branch_status_icon": true
+  },
+  "terminal": {
+    "button": true
+  },
+  "status_bar": {
+    "cursor_position_button": true
+  },
   "agent_servers": {
     "claude-acp": {
       "default_config_options": {
@@ -28,6 +49,11 @@
     "min_line_number_digits": 3
   },
   "agent": {
+    "notify_when_agent_waiting": "all_screens",
+    "button": true,
+    "sidebar_side": "left",
+    "play_sound_when_agent_done": "always",
+    "single_file_review": false,
     "dock": "left",
     "default_model": {
       "provider": "google",
@@ -35,6 +61,7 @@
     }
   },
   "project_panel": {
+    "button": true,
     "dock": "right"
   },
   "outline_panel": {

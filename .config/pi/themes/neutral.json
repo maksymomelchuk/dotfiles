@@ -1,0 +1,91 @@
+{
+  "$schema": "https://raw.githubusercontent.com/earendil-works/pi/main/packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
+  "name": "neutral",
+  "vars": {
+    "bg":       "#f5f3ed",
+    "bgMid":    "#edeae3",
+    "bgDark":   "#e4e1da",
+    "bgDeep":   "#d6d3cb",
+    "bgPanel":  "#c8c5bc",
+
+    "text":     "#1c1a18",
+    "sub1":     "#3c3a38",
+    "sub0":     "#585654",
+    "over2":    "#706e6b",
+    "over1":    "#8a8784",
+    "over0":    "#a09d9a",
+
+    "purple":   "#7c5cbf",
+    "teal":     "#1a7e8a",
+    "blue":     "#1a5faa",
+    "green":    "#2d7a46",
+    "red":      "#b83232",
+    "orange":   "#c25900",
+    "yellow":   "#9a7000",
+    "mauve":    "#875faf"
+  },
+  "colors": {
+    "accent":             "purple",
+    "border":             "purple",
+    "borderAccent":       "purple",
+    "borderMuted":        "bgDeep",
+    "success":            "green",
+    "error":              "red",
+    "warning":            "yellow",
+    "muted":              "over2",
+    "dim":                "over1",
+    "text":               "",
+    "thinkingText":       "over2",
+
+    "selectedBg":         "bgDark",
+    "userMessageBg":      "bgMid",
+    "userMessageText":    "",
+    "customMessageBg":    "bgDark",
+    "customMessageText":  "",
+    "customMessageLabel": "mauve",
+    "toolPendingBg":      "bgMid",
+    "toolSuccessBg":      "#eceae4",
+    "toolErrorBg":        "#f0e8e8",
+    "toolTitle":          "",
+    "toolOutput":         "over2",
+
+    "mdHeading":          "orange",
+    "mdLink":             "blue",
+    "mdLinkUrl":          "teal",
+    "mdCode":             "teal",
+    "mdCodeBlock":        "sub1",
+    "mdCodeBlockBorder":  "over1",
+    "mdQuote":            "over2",
+    "mdQuoteBorder":      "over1",
+    "mdHr":               "bgDeep",
+    "mdListBullet":       "green",
+
+    "toolDiffAdded":      "#1a8a3a",
+    "toolDiffRemoved":    "#cc2222",
+    "toolDiffContext":    "over2",
+
+    "syntaxComment":      "#6a9955",
+    "syntaxKeyword":      "#0000cc",
+    "syntaxFunction":     "#795e26",
+    "syntaxVariable":     "#001080",
+    "syntaxString":       "#a31515",
+    "syntaxNumber":       "#098658",
+    "syntaxType":         "#267f99",
+    "syntaxOperator":     "#1c1a18",
+    "syntaxPunctuation":  "#1c1a18",
+
+    "thinkingOff":        "bgDeep",
+    "thinkingMinimal":    "over1",
+    "thinkingLow":        "blue",
+    "thinkingMedium":     "teal",
+    "thinkingHigh":       "purple",
+    "thinkingXhigh":      "red",
+
+    "bashMode":           "green"
+  },
+  "export": {
+    "pageBg": "#f5f3ed",
+    "cardBg": "#edeae3",
+    "infoBg": "#fdf6e3"
+  }
+}

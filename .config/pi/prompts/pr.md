@@ -1,0 +1,1 @@
+/Users/maksym/.claude/commands/pr.md

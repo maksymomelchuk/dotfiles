@@ -11,40 +11,43 @@
     "bindings": {
       // "space space": "file_finder::Toggle",
       "cmd-b": "workspace::ToggleRightDock",
+      "ctrl-`": "workspace::NewCenterTerminal",
       "shift h": "workspace::ActivatePaneLeft",
-      "shift l": "workspace::ActivatePaneRight"
-    }
+      "shift l": "workspace::ActivatePaneRight",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "cmd-.": "editor::ShowCompletions"
-    }
+      "cmd-.": "editor::ShowCompletions",
+    },
   },
   {
     "context": "VimControl && !menu",
     "bindings": {
       // put key-bindings here if you want them to work in normal & visual mode
       "shift l": "workspace::ActivatePaneRight",
-      "shift j": "terminal_panel::ToggleFocus"
-    }
+      "shift j": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
-      "shift k": "terminal_panel::ToggleFocus"
-    }
+      "shift k": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "cmd-shift-c": "project_panel::CollapseAllEntries"
-    }
+      "cmd-shift-c": "project_panel::CollapseAllEntries",
+    },
   },
   {
     "context": "Workspace",
+  },
+  {
     "bindings": {
-      "cmd-shift-g": "workspace::ToggleLeftDock"
+      "cmd-shift-g": "git_panel::Toggle"
     }
   }
 ]
