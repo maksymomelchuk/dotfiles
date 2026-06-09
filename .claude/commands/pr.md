@@ -73,7 +73,10 @@ EOF
 PR title rules:
 
 - Under 70 characters.
-- Conventional format: `type: lowercase description` (the subject after `type:` must start lowercase — the `semantic-pull-request` check enforces this).
+- Conventional format with **mandatory scope**: `type(scope): lowercase description`.
+- Scope must match one of: `GETM-\d+` (e.g. `GETM-3987`), `release`, `deps`, `deps-dev`.
+- Infer the `GETM-\d+` scope from the branch name (e.g. `feature/getm-3985` → `GETM-3985`), commit messages, or ask the user if none is found.
+- The subject after `type(scope):` must start with a lowercase letter — the `semantic-pull-request` check enforces this.
 - Put details in the body, not the title.
 
 ## Step 7 — Report
