@@ -3,6 +3,9 @@ input=$(cat)
 MODEL=$(echo "$input" | jq -r '.model.display_name' | sed -E 's/ *\(1M context\)//')
 FIVE_H=$(echo "$input" | jq -r '.rate_limits.five_hour.used_percentage // empty')
 RESETS_AT=$(echo "$input" | jq -r '.rate_limits.five_hour.resets_at // empty')
+BRANCH=$(git branch --show-current 2>/dev/null)
+BRANCH_LABEL=""
+[ -n "$BRANCH" ] && BRANCH_LABEL=" · $BRANCH"
 
 if [ -n "$FIVE_H" ]; then
   PCT=$(printf '%.0f' "$FIVE_H")
@@ -21,7 +24,7 @@ if [ -n "$FIVE_H" ]; then
     RESETS_LABEL=" · $CLOCK"
   fi
 
-  printf "[%s] ${COLOR}5h: %s%%${RESET}%s\n" "$MODEL" "$PCT" "$RESETS_LABEL"
+  printf "[%s] ${COLOR}5h: %s%%${RESET}%s%s\n" "$MODEL" "$PCT" "$RESETS_LABEL" "$BRANCH_LABEL"
 else
-  echo "[$MODEL]"
+  echo "[$MODEL]$BRANCH_LABEL"
 fi

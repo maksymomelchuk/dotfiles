@@ -139,6 +139,7 @@
   },
   "effortLevel": "high",
   "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
   "theme": "light",
   "verbose": true,
   "remoteControlAtStartup": true,
